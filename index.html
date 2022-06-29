@@ -22,16 +22,16 @@
     <div class="user">
         <img src="Source/PDP.jpg" alt="">
         <h3 class="name">Amjad Jilali</h3>
-        <p class="post">fullstack developer</p>
+        <p class="post">Fullstack Developer</p>
     </div>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#portfolio">what i'm doing</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">What I'm doing</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -47,10 +47,9 @@
 
     <h3>HI THERE !</h3>
     <h1>I'M <span>Amjad Jilali</span></h1>
-    <p>Innovative optimized solution seeker with solide educational background. Excited to be at the deployment phase of my career as a webdevelopper.
-I am ambitious, adventurous, assiduous, animated, fast learner and passion in software development.
+    <p>A motivated software engineering student with fundamental experience and knowledge of software design, web development and databases. Seeking to utilize broad educational background with excellent analytical, technical, and programming skills  with a proven ability to maintain and enhance company software as an entry level software engineer.
     </p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
 
 </section>
 
@@ -60,15 +59,15 @@ I am ambitious, adventurous, assiduous, animated, fast learner and passion in so
 
 <section class="about" id="about">
 
-<h1 class="heading"> <span>about</span> me </h1>
+<h1 class="heading"> <span>About</span> me </h1>
 
 <div class="row">
 
     <div class="info">
-        <h3> <span> name : </span> Amjad Jilali </h3>
-        <h3> <span> age : </span> 25 </h3>
-        <h3> <span> post : </span> Fullstack developer </h3>
-        <h3> <span> language : </span> moroccan </h3>
+        <h3> <span> Name : </span> Amjad Jilali </h3>
+        <h3> <span> Age : </span> 25 </h3>
+        <h3> <span> Post : </span> Fullstack developer </h3>
+        <h3> <span> Nationality : </span> Moroccan </h3>
         <input class="btn"  value="Download CV"  onclick="window.location.href='https://amjad0zip.github.io/amjadpro/Source/CV Amjad Jilali - 2022.pdf';">
     </div>
 
@@ -76,12 +75,12 @@ I am ambitious, adventurous, assiduous, animated, fast learner and passion in so
 
         <div class="box">
             <span>3+</span>
-            <h3>Month of experience</h3>
+            <h3>Months of experience</h3>
         </div>
 
         <div class="box">
             <span>20+</span>
-            <h3>project completed</h3>
+            <h3>projects completed</h3>
         </div>
 
         <div class="box">
@@ -90,7 +89,7 @@ I am ambitious, adventurous, assiduous, animated, fast learner and passion in so
         </div>
 
         <div class="box">
-            <span>3+</span>
+            <span>2+</span>
             <h3>awards won</h3>
         </div>
 
@@ -106,7 +105,7 @@ I am ambitious, adventurous, assiduous, animated, fast learner and passion in so
 
 <section class="education" id="education">
 
-<h1 class="heading"> my <span>education</span> </h1>
+<h1 class="heading"> my <span>Education</span> </h1>
 
 <div class="box-container">
 
@@ -154,7 +153,7 @@ SVT</p>
 
 <section class="portfolio" id="portfolio">
 
-<h1 class="heading"> What <span>i'm doing</span> </h1>
+<h1 class="heading"> What <span>I'm doing</span> </h1>
 
 <div class="box-container">
 
@@ -192,13 +191,13 @@ SVT</p>
 
 <section class="contact" id="contact">
 
-<h1 class="heading"> <span>contact</span> me </h1>
+<h1 class="heading"> <span>Contact</span> me </h1>
 
 <div class="row">
 
     <div class="content">
 
-        <h3 class="title">contact info</h3>
+        <h3 class="title">Contact info</h3>
 
         <div class="info">
             <h3> <i class="fas fa-envelope"></i> amjad.jil@hotmail.com </h3>
@@ -217,16 +216,9 @@ SVT</p>
         <input type="email" placeholder="email" class="box" required>
         <input type="text" placeholder="project" class="box">
         <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+        <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
 
     </form>
-    <?php
-        if (isset($_POST['message'])) {
-        $retour = mail('amjad.jil@hotmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: amjad.jilali@hightech.edu' . "\r\n" . 'Reply-to: ' . $_POST['email']);
-        if($retour)
-            echo '<p>Votre message a bien été envoyé.</p>';
-            }
-            ?>
 
 </div>
 
