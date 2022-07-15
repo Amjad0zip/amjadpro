@@ -94,7 +94,7 @@ header{
     z-index: 1000;
     height:100%;
     width:35rem;
-    background:#1a1a1a;
+    background:var(--yellow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +103,13 @@ header{
 }
 
 header .user img{
-    height:17rem;
-    width:17rem;
-    border-radius: 50%;
+    height:13rem;
+    width:13rem;
+    border-radius: 5%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.2rem solid #fff;
+    box-shadow: 5px 5px 20px white;
 }
 
 header .user .name{
@@ -203,6 +204,16 @@ header .navbar ul li a:hover{
     color:var(--yellow);
     padding:1rem 0;
     font-weight: normal;
+}
+.academic .box h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+.academic .box h3 span{
+    color:#222;
+    padding:0 .5rem;
 }
 
 .about .row .info h3 span{
@@ -300,6 +311,30 @@ header .navbar ul li a:hover{
     margin:2rem;
     overflow: hidden;
     cursor: pointer;
+}
+.academic .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+.academic .box-container .box{
+    height: 25rem;
+    width:25rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.academic .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.academic .box-container .box:hover img{
+    transform: scale(1.2);
 }
 
 .portfolio .box-container .box img{
