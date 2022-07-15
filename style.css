@@ -103,8 +103,8 @@ header{
 }
 
 header .user img{
-    height:13rem;
-    width:13rem;
+    height:15rem;
+    width:15rem;
     border-radius: 5%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -412,7 +412,7 @@ header .navbar ul li a:hover{
 
 .top{
     position: fixed;
-    bottom:7.5rem; right: 2rem;
+    bottom:2rem; right: 2rem;
     z-index: 100;
     display: none;
 }
