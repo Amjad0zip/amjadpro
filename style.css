@@ -416,6 +416,63 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
+.cv{
+    position: fixed;
+    bottom:55rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+.diaporama2{
+float:center;
+margin:0 auto;
+width: 300px;
+height: 150px;
+border: 3px solid #333;
+background-image:url('Source/couverture1.jpg');
+background-size:100%;
+
+webkit-animation-name: diapo2;
+webkit-animation-duration:9s;
+webkit-animation-timing-function:linear;
+webkit-animation-iteration-count:infinite;
+webkit-animation-direction:normal;
+
+moz-animation-name: diapo2;
+moz-animation-duration:9s;
+moz-animation-timing-function:linear;
+moz-animation-iteration-count:infinite;
+moz-animation-direction:normal;
+
+animation-name: diapo2;
+animation-duration:9s;
+animation-timing-function:linear;
+animation-iteration-count:infinite;
+animation-direction:normal;
+}
+@-webkit-keyframes diapo2{
+0%{background-image:url('Source/couverture1.jpg');}
+10%{background-image:url('Source/couverture1.jpg');}
+30%{background-image:url('Source/couverture3.jpg');}
+55%{background-image:url('Source/couverture3.jpg');}
+67%{background-image:url('Source/couverture5.jpg');}
+90%{background-image:url('Source/couverture5.jpg');}
+}
+@-moz-keyframes diapo2{
+0%{background-image:url('Source/couverture1.jpg');}
+10%{background-image:url('Source/couverture1.jpg');}
+30%{background-image:url('Source/couverture3.jpg');}
+55%{background-image:url('Source/couverture3.jpg');}
+67%{background-image:url('Source/couverture5.jpg');}
+90%{background-image:url('Source/couverture5.jpg');}
+}
+@keyframes diapo2{
+0%{background-image:url('Source/couverture1.jpg');}
+10%{background-image:url('Source/couverture1.jpg');}
+30%{background-image:url('Source/couverture3.jpg');}
+55%{background-image:url('Source/couverture3.jpg');}
+67%{background-image:url('Source/couverture5.jpg');}
+90%{background-image:url('Source/couverture5.jpg');}
+}
 
 
 

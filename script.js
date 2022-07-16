@@ -12,8 +12,10 @@ $(document).ready(function(){
 
     if($(window).scrollTop() > 0){
       $('.top').show();
+      $('.cv').show();
     }else{
       $('.top').hide();
+      $('.cv').hide();
     }
 
   });
