@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 :root{
     --yellow:#fa8128;
@@ -331,13 +334,34 @@ header .navbar ul li a:hover{
     box-shadow: 5px 5px 20px black;
 }
 .academic .box-container .box img{
-    height:100%;
-    width:100%;
+    height:120%;
+    width:120%;
     object-fit: cover;
+}
+.academic .box-container .box h3{
+    display: none;
 }
 
 .academic .box-container .box:hover img{
-    transform: scale(1.2);
+    content:'';
+    position: absolute;
+    left: 0;
+    width:100%;
+    height: calc(60% + 35px);
+    background-color: #fff;
+    transition: tranform .5s .25s ease-in;
+    z-index: -1; 
+    bottom: 0;
+    clip-path: : polygon(0 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+
+}
+.academic .box-container .box:hover h3{
+transform: scale(0.9);
+display: inline-block;
+ 
+
+
 }
 
 .portfolio .box-container .box img{
@@ -422,6 +446,22 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
+.link {
+    text-decoration: none; color:#b7b7b7; margin: 10px; width: 50px;
+    height: 50px; display: flex; justify-content: center; align-items: center;
+    background: rgb(28, 28, 28); border-radius: 10px; position: relative; transition: transform 0.4s;
+ }
+ .link:hover { transform:  rotate(45deg); }
+ .link::before {
+    content: **; position: absolute; width: 100%; height: 100%; opacity: 0;
+    background: #373737; border-radius:10px; transition: opacity 0,2s;
+ }
+ .link:hover::before { opacity:0.4s; }
+ .link:nth-child(1)::before { background: #0a66c2; }
+ .link:hover::before { transform: translate(-4px, -4px); filter:blur(10px); }
+ .link i {font-size: 2.7em; transition: all 1.4s; }
+ .link:hover i { color: #c8c8c8; transform: rotate(-45deg); }
+ .link:hover i.linkedin {color: #0a66c2;}
 .diaporama2{
 float:center;
 margin:0 auto;
@@ -565,3 +605,4 @@ h2{
     }
 
  }
+ 
