@@ -341,7 +341,9 @@ header .navbar ul li a:hover{
 .academic .box-container .box h3{
     display: none;
 }
-
+.academic .box-container .box h4{
+    display: none;
+}
 
 .academic .box-container .box:hover img{
     content:'';
