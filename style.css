@@ -341,6 +341,9 @@ header .navbar ul li a:hover{
 .academic .box-container .box h3{
     display: none;
 }
+.academic .box-container .box h4{
+    display: none;
+}
 
 .academic .box-container .box:hover img{
     content:'';
@@ -359,9 +362,10 @@ header .navbar ul li a:hover{
 .academic .box-container .box:hover h3{
 transform: scale(0.9);
 display: inline-block;
- 
-
-
+}
+.academic .box-container .box:hover h4{
+transform: scale(0.9);
+display: inline-block;
 }
 
 .portfolio .box-container .box img{
