@@ -342,7 +342,7 @@ header .navbar ul li a:hover{
     display: none;
 }
 .academic .box-container .box h4{
-    display: block;
+    display: none;
 }
 
 .academic .box-container .box:hover img{
