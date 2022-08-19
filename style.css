@@ -339,24 +339,25 @@ header .navbar ul li a:hover{
     object-fit: cover;
 }
 .academic .box-container .box h3{
-    display: none;
+    display: inline-block;
+    object-fit: cover;
 }
 .academic .box-container .box h4{
     display: none;
+    object-fit: cover;
 }
 
 .academic .box-container .box:hover img{
     content:'';
-    position: absolute;
     left: 0;
     width:100%;
-    height: calc(60% + 35px);
+    height: calc(40% + 50px);
     background-color: #fff;
     transition: tranform .5s .25s ease-in;
     z-index: -1; 
-    bottom: 0;
-    clip-path: : polygon(0 0, 100% 45%, 0% 100%);
-    transform: translateY(-100%);
+    bottom: 20;
+    clip-path: : polygon(0 0, 90% 45%, 0% 90%);
+    transform: translateY(-1%);
 
 }
 .academic .box-container .box:hover h3{
@@ -366,6 +367,7 @@ display: inline-block;
 .academic .box-container .box:hover h4{
 transform: scale(0.9);
 display: inline-block;
+background-color: white;
 }
 
 .portfolio .box-container .box img{
@@ -573,6 +575,7 @@ h2{
     color: var(--yellow);
 
 }
+
 
 @media (max-width:768px){
 
